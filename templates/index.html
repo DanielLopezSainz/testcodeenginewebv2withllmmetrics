@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatsonxAI Metrics App</title>
+</head>
+<body>
+    <h1>WatsonxAI Metrics App</h1>
+    <form method="POST" action="/">
+        <label for="input_text">Input Text:</label><br>
+        <textarea id="input_text" name="input_text" rows="5" cols="50"></textarea><br><br>
+        <button type="submit">Send</button>
+        <button type="button" onclick="clearFields()">Erase</button>
+    </form>
+    <h2>Results:</h2>
+    <textarea id="response_text" rows="10" cols="50" readonly>{{ response_text }}</textarea>
+
+    <script>
+        function clearFields() {
+            document.getElementById("input_text").value = "";
+            document.getElementById("response_text").value = "";
+        }
+    </script>
+</body>
+</html>

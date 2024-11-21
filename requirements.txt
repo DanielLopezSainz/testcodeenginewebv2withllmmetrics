@@ -1,0 +1,7 @@
+flask
+ibm-watsonx-ai
+nltk
+pandas
+ibm-watson-openscale
+ibm-metrics-plugin[robustness]~=3.0.9
+torch
